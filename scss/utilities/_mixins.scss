@@ -1,1 +1,26 @@
 // create mixins for media queries and felxbox settings
+
+
+@mixin flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin mq($break) {
+    $value: map-get($breakpoints, $break);
+    $sm: map-get($breakpoints, 's' );
+
+    @if $value < $sm {
+        @media(max-width: $value); {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: $value) {
+            @content;
+        }
+    }
+
+    @else "Whoops! No value could be retrived for '#{$break}'."
+    }

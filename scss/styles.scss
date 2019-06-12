@@ -9,6 +9,6 @@
 
 
 // import components partials
-@import 'utilities',
-        'components',
-        'base';
+@import 'base/index',
+        'utilities/index',
+        'components/index';

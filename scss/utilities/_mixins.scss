@@ -12,7 +12,7 @@
     $sm: map-get($breakpoints, 's' );
 
     @if $value < $sm {
-        @media(max-width: $value); {
+        @media(max-width: $value) {
             @content;
         }
     }
@@ -21,6 +21,4 @@
             @content;
         }
     }
-
-    @else "Whoops! No value could be retrived for '#{$break}'."
-    }
+}

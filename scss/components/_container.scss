@@ -1,0 +1,8 @@
+
+.container {
+    @include flex-col;
+    margin: 0 4%;
+    font-size: $base-font-size;
+    font-family: $font--Family-primary;
+    line-height: ($base-line-height/$base-font-size);
+}

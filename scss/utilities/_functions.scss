@@ -1,0 +1,12 @@
+
+// Importing Font if url exists 
+
+@if variable-exists($font--Lato) {
+    @import url($font--Lato);
+}
+
+// Calculate em values
+
+@function em ($target, $context: $base-font-size) {
+    @return ($target / $context) * 1em;
+}

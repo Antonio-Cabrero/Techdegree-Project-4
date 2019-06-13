@@ -2,30 +2,46 @@
 // create at least 1 var for font, breakpoints and colors
 
 //fonts:
-$primary-font: #8c8c8c;
+$font--Lato: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet';
+$font--Family-primary: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font--Family-secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//font weight:
+$font-weight-thin   : 300;
+$font-weight-regular: 400;
+$font-weight-bold   : 700;
+$font-weight-black  : 900;
+
 
 //colors:
-$green-color: #67e0bf;
+$green-color : #67e0bf;
 $accent-color: #64ddfb;
+
+//font-colors:
+
+$primary-font: #8c8c8c;
+
+//btn-colors:
 
 $btn-default: #61dcfb;
 $btn-success: #6dca81;
-$btn-error: #df757a;
+$btn-error  : #df757a;
 $btn-warning: #f77858;
-$btn-info: #8f7bbf;
+$btn-info:    #8f7bbf;
 
-$logo-top-circle: $accent-color;
-$logo-bottom-circle: $green-color;
 $logo-font: #787d82;
 
-$grid_col--3: #dbb1ed;
-$grid_col--4: #86e5fc;
-$grid_col--5: #8dd79f;
-$grid_col--6: #4ca9c8;
-$grid_col--7: #e89ea2;
-$grid_col--8: #f99e85;
+$grid_col--3:  #dbb1ed;
+$grid_col--4:  #86e5fc;
+$grid_col--5:  #8dd79f;
+$grid_col--6:  #4ca9c8;
+$grid_col--7:  #e89ea2;
+$grid_col--8:  #f99e85;
 $grid_col--12: #88e7d0;
 
+// text:
+
+$base-font-size:   16px;
+$base-line-height: 24px;
 
 //breakpoints:
 

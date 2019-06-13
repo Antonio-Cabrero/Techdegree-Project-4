@@ -1,0 +1,16 @@
+
+.nav {
+    @include flex-col;
+
+    > li {
+        padding: 12px 0;
+        &:first-child {
+            background-color: $green-color;
+            border-radius: 5px;
+            a{
+                color: #fff;
+            }
+        }
+        }
+    
+    }

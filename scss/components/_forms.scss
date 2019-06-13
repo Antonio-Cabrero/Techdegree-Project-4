@@ -1,0 +1,19 @@
+
+.form {
+    @include flex-col;
+    label {
+        visibility: hidden;
+    }
+    input {
+        background: transparent;
+        border: none;
+        border-bottom: 4px solid $green-color;
+        padding-bottom: 8px;
+        &::placeholder {
+            font-size: 12px;
+            font-weight: bold;
+            color: $primary-font;
+            text-indent: 10px;
+        }
+    }
+}

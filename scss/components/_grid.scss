@@ -55,6 +55,7 @@
 
 // targets all elements with classes that begin with grid__col
 [class^=grid__col] {
+    @include flex-col;
   // grid__col + grid__col, targets two sibling columns
   & + & {
 

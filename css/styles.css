@@ -15,7 +15,8 @@ ul {
 
 p {
   color: #8c8c8c;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 a {
@@ -305,6 +306,9 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 4%;
+  font-size: 16px;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
 }
 
 .nav {

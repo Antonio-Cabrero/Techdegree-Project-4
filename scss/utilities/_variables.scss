@@ -6,15 +6,17 @@ $font--Lato: 'https://fonts.googleapis.com/css?family=Lato:300,400,700,900&displ
 $font--Family-primary: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font--Family-secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 //font weight:
-$font-weight-thin   : 300;
-$font-weight-regular: 400;
-$font-weight-bold   : 700;
-$font-weight-black  : 900;
+$font-weight-ultra-thin : 100;
+$font-weight-thin       : 300;
+$font-weight-regular    : 400;
+$font-weight-bold       : 700;
+$font-weight-black      : 900;
 
 
 //colors:
-$green-color : #67e0bf;
+$green-color : #67dfbf;
 $accent-color: #64ddfb;
+$white       : #fff; 
 
 //font-colors:
 
@@ -38,6 +40,26 @@ $grid_col--7:  #e89ea2;
 $grid_col--8:  #f99e85;
 $grid_col--12: #88e7d0;
 
+    $grid-color-map: (
+        "--3": $grid_col--3, 
+        "--4": $grid_col--4,
+        "--5": $grid_col--5,
+        "--6": $grid_col--6,
+        "--7": $grid_col--7,
+        "--8": $grid_col--8,
+       "--12": $grid_col--12,
+    );
+
+//UI colors
+
+    $ui-colors: (
+        default: $btn-default,
+        success: $btn-success,
+        error:   $btn-error,
+        warning: $btn-warning,
+        info:    $btn-info,
+    );
+
 // text:
 
 $base-font-size:   16px;
@@ -47,7 +69,8 @@ $base-line-height: 24px;
 
 //breakpoints map
 $breakpoints: (
-    's': 480px,
-    'm': 768px,
-    'l': 1400px,
+    'small': 480px,
+    'medium': 768px, 
+    'large': 1400px,
 );
+

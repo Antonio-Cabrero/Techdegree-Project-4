@@ -1,0 +1,35 @@
+
+.container {
+    @extend %flex-col;
+    margin: 0 em(23px);
+    font-size: $base-font-size;
+    font-family: $font--Family-primary;
+    line-height: ($base-line-height/$base-font-size);
+}
+
+.headline {
+    &--primary {
+        @extend %hdl-prim;
+}
+
+    &--secondary {
+        @extend %hdl-sec;    
+}
+}
+
+.link {
+    color: $accent-color;
+    font-weight: $font-weight-bold; 
+}
+
+.blockquote {
+    font-size: em(15.5px);
+    font-style: italic;
+    font-weight: $font-weight-ultra-thin;
+    color: $primary-font;
+    border-left: 6px solid $green-color;
+    padding-left: em(10px);
+    margin: 0 auto;
+    margin-top: em(20px);
+    width: 85%;
+}

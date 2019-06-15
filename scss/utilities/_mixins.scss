@@ -1,15 +1,12 @@
 // create mixins for media queries and felxbox settings
 
 
-@mixin flex-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+
+// media queries
 
 @mixin mq($break) {
     $value: map-get($breakpoints, $break);
-    $sm: map-get($breakpoints, 's' );
+    $sm: map-get($breakpoints, 'small' );
 
     @if $value < $sm {
         @media(max-width: $value) {
@@ -21,4 +18,27 @@
             @content;
         }
     }
+}
+
+// UI colors
+
+        //btn
+@mixin bg-colors($map) {
+    @each $theme, $color in $map {
+            &--#{$theme} {
+                background-color: $color;
+                @extend %btn-styles;
+            }
+    }
+}
+
+        //grid_col--
+@mixin grid-colors($map) {
+    @each $col, $color in $map {
+    
+        &#{$col} {
+            background-color: #{$color};
+            }
+    
+ } 
 }

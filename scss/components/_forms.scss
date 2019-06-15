@@ -1,19 +1,13 @@
 
 .form {
-    @include flex-col;
-    label {
+    @extend %flex-col;
+    .form__label--hidden {
         visibility: hidden;
     }
-    input {
-        background: transparent;
-        border: none;
-        border-bottom: 4px solid $green-color;
-        padding-bottom: 8px;
+    .form__input {
+        @extend %form-style;
         &::placeholder {
-            font-size: 12px;
-            font-weight: bold;
-            color: $primary-font;
-            text-indent: 10px;
+            @extend %form-placeholder;
         }
     }
 }

@@ -10,7 +10,7 @@
 .grid {
 
   &__row {
-    @extend %flex-col;
+    @include flex-col;
 
     @include mq('medium') {
       flex-direction: row;
@@ -27,7 +27,6 @@
       
         @extend %col-styles;
         @include mq('medium') {
-
         margin-top: 0;
 
         flex-basis: #{$i / 12 * 100 + "%"} ;
@@ -39,7 +38,7 @@
 
 // targets all elements with classes that begin with grid__col
 [class^=grid__col] {
-    @extend %flex-col;
+    @include flex-col;
 
   & + & {
 
@@ -53,3 +52,20 @@
  #grid ~ .grid__row .grid__col {
   @include grid-colors($grid-color-map);
   }
+
+.card {
+  margin-bottom: auto;
+  @include mq('large'){
+  margin-left: em(15px);
+  }
+}
+
+.grid__col--12 {
+  @include mq('medium'){
+  flex-direction: row; 
+  [class^=btn--] {
+    width: 100%;
+    margin: em(20px) em(10px);
+  }
+  }
+}

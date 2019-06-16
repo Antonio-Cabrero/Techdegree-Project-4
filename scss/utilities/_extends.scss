@@ -1,0 +1,192 @@
+// links, images, nav items
+
+
+// typography 
+
+// container
+
+%container-styles {
+    @include flex-col;
+    margin: 0 em(23px);
+    font-size: $base-font-size;
+    font-family: $font--Family-primary;
+    line-height: ($base-line-height/$base-font-size);
+    margin-top: em(25px);
+    @include mq('medium') {
+        margin: 0 auto;
+        max-width: 90%; 
+    }
+    @include mq ('large'){
+        max-width: 80%;
+    } 
+}
+
+// p
+
+%p-styles {
+    margin-top: em(15px);
+    color: $primary-font;
+    font-size: em(15px);
+    font-weight: $font-weight-regular;
+    line-height: ($base-line-height/$base-font-size);
+    @include mq('medium') {
+        font-size: em(18px);
+    }
+    @include mq('large') {
+        font-size: em(20px);
+    }
+}
+
+// ul
+
+%ul-style {
+    @include flex-col;
+    list-style: none;
+    font-weight: $font-weight-thin;
+    text-align: center;
+}
+
+// headlines
+%hdl-prim {
+    font-size: em(24px); 
+    color: $green-color;
+    line-height: 1;
+    font-weight: $font-weight-bold;
+    margin: 0 auto;
+    margin-top: em(10px);
+    padding-bottom: em(10px);
+    padding-left: em(15px);
+    @include mq('medium') {
+        font-size: em(29px);
+    }
+    @include mq('large'){
+        font-size: em(34px)
+    }
+}
+
+%hdl-sec {
+    font-size: em(14px); 
+    color: $primary-font;
+    font-weight: $font-weight-ultra-thin;
+    margin-top: em(50px);
+    margin-bottom: em(25px);
+    @include mq('medium') {
+        font-size: em(17.5px);
+    }
+    @include mq('large'){
+        padding: 10px 0;
+        font-size: em(20px)
+    }
+}
+
+// blockquotes 
+
+%blockquotes-style {
+    font-size: em(15.5px);
+    font-style: italic;
+    font-weight: $font-weight-ultra-thin;
+    color: $primary-font;
+    border-left: 6px solid $green-color;
+    padding-left: em(10px);
+    margin: 0 auto;
+    margin-top: em(20px);
+    width: 85%;
+    @include mq('medium') {
+        font-size: em(17.5px);
+    }
+   @include mq('large'){
+    font-size: em(24px);
+    }
+}
+// form
+
+%form-style{
+    background: transparent;
+    border: none;
+    border-bottom: 5px solid $green-color;
+    padding-bottom: 8px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+%form-placeholder {
+    font-size: em(12px);
+    font-weight: bold;
+    color: $primary-font;
+    text-indent: em(10px);
+    @include mq('large'){
+        font-size: em(16px);
+        }
+}
+
+// images
+
+%image-settings {
+    margin: 0 auto; 
+    max-width: 100%;
+    height: auto;
+}
+
+//nav items 
+
+%li-styles {
+padding: 5px 10px;
+text-indent: 0;
+@include mq('large'){
+font-size: em(20px);
+}
+&:hover {
+    background-color: $green-color;
+    border-radius: 5px;
+    a {
+        color: $white;
+    }
+}
+}
+// links 
+
+%link-styles {
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: $primary-font;
+}
+
+
+// btns
+
+%btn-styles {
+    border:none;
+    font-weight: $font-weight-regular;
+    font-size: em(14px);
+    margin: em(20px) 0;  
+    padding: em(8px) 0;
+    border-radius: 4px;
+    color: $white;
+    @include mq('large'){
+        font-size: em(18px);
+        }
+}
+
+%btn-styles-row {
+    @include mq('medium') {
+        width: 100%;
+        margin: em(20px) em(10px);
+    }
+}
+
+//grid 
+
+%col-styles {
+    border:none;
+    font-weight: $font-weight-bold;
+    font-size: em(14px);
+    margin: em(10px) 0;
+    text-indent: 10px;
+    padding: em(8px) 0;
+    border-radius: 4px;
+    color: $primary-font;
+    margin-top: 10px;
+    flex-basis: 100%;
+}

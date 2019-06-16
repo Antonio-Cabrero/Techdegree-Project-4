@@ -1,23 +1,4 @@
 
-
-ul {
-    @extend %flex-col;
-    list-style: none;
-    font-weight: $font-weight-thin;
-    text-align: center;
-}
-
-p {
-    color: $primary-font;
-    font-size: em(15px);
-    font-weight: $font-weight-regular;
-    line-height: ($base-line-height/$base-font-size);
-}
-
-a {
-    text-align: center;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    color: $primary-font;
+* {
+    padding: 0;
 }

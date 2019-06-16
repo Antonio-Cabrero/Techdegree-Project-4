@@ -1,6 +1,6 @@
 
 .form {
-    @extend %flex-col;
+    @include flex-col;
     .form__label--hidden {
         visibility: hidden;
     }

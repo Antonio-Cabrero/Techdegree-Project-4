@@ -1,20 +1,17 @@
 
 .nav {
-    @extend %flex-col;
-
-    > li {
-        padding: 10px;
-        &:hover {
-            background-color: $green-color;
-            border-radius: 5px;
-            a {
-                color: $white;
-            }
-        }
+    @include flex-col;
+    @extend %ul-style;
+    > .nav__items {
+        @extend %li-styles; 
         }
         
         @include mq ('medium') {
-            @extend %flex-row;
+            @include flex-row;
+            justify-content: center
         }
-    
+    & a {
+        
+    @extend %link-styles;
+    }
     }

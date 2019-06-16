@@ -1,10 +1,9 @@
 
 .container {
-    @extend %flex-col;
-    margin: 0 em(23px);
-    font-size: $base-font-size;
-    font-family: $font--Family-primary;
-    line-height: ($base-line-height/$base-font-size);
+    @extend %container-styles;
+    & p {
+    @extend %p-styles;
+    }
 }
 
 .headline {
@@ -23,13 +22,5 @@
 }
 
 .blockquote {
-    font-size: em(15.5px);
-    font-style: italic;
-    font-weight: $font-weight-ultra-thin;
-    color: $primary-font;
-    border-left: 6px solid $green-color;
-    padding-left: em(10px);
-    margin: 0 auto;
-    margin-top: em(20px);
-    width: 85%;
-}
+   @extend %blockquotes-style;
+   }

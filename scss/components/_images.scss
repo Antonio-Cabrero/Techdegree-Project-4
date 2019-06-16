@@ -2,16 +2,16 @@
 .img--logo {
    padding-top: 20px;
    padding-bottom: 20px;
+   @extend %image-settings;
 }
 
 .img--avatar {
-    width: 55%;
-    margin: 0 auto;
+    @extend %image-settings;
     margin-top: em(10px);
 }
 
 .img--frame {
-    height: em(130px);
+    @extend %image-settings;
     display: inline-flex;
     border: 10px solid #fff;
     outline: 1px solid #cfcfcf;

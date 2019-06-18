@@ -2,7 +2,7 @@
 .nav {
     @include flex-col;
     @extend %ul-style;
-    > .nav__items {
+    > .nav__item {
         @extend %li-styles; 
         }
         
@@ -10,8 +10,4 @@
             @include flex-row;
             justify-content: center
         }
-    & a {
-        
-    @extend %link-styles;
-    }
     }

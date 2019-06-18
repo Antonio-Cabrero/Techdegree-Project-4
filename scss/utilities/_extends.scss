@@ -44,6 +44,7 @@
     list-style: none;
     font-weight: $font-weight-thin;
     text-align: center;
+    
 }
 
 // headlines
@@ -132,15 +133,13 @@
 %li-styles {
 padding: 5px 10px;
 text-indent: 0;
-@include mq('large'){
-font-size: em(20px);
-}
 &:hover {
     background-color: $green-color;
     border-radius: 5px;
-    a {
-        color: $white;
-    }
+    color: $white;
+}
+@include mq('large'){
+font-size: em(20px);
 }
 }
 // links 
